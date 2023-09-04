@@ -67,6 +67,7 @@ p.outside{outline-style:outset ;}
     display: none;
     margin: 0 10px;
 }
+
 @media screen and (max-width:768px){
     .navbar-list{
         flex-wrap: wrap;
@@ -87,6 +88,17 @@ p.outside{outline-style:outset ;}
         margin-left: auto;
     }
     .active{display: block;}
+    
+}
+@media screen and (max-width:500px){
+    .logo{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:320px){
+    .logo{
+        font-size: 1em;
+    }
     
 }
 
@@ -113,7 +125,6 @@ p.outside{outline-style:outset ;}
 .character-img{
     width: 500px;
     border-radius:3%;
-    margin-right: auto;
 }
 .big-heading{
     flex: 1;
@@ -127,7 +138,7 @@ p.outside{outline-style:outset ;}
     color: black    ;
 }
 .big-heading p{
-    font-size: 1,5em;
+    font-size: 1.5em;
     margin-bottom: 50px;
 }
 
@@ -137,7 +148,7 @@ p.outside{outline-style:outset ;}
     border-radius: 12px;
     font-size: 1em;
     font-weight: bold;
-    margin-right:30px ;
+    margin-right:20px ;
     padding: 23px 50px;
 
 
@@ -150,46 +161,39 @@ p.outside{outline-style:outset ;}
     background-color: rgb(11, 21, 135);
     color: black;
 }
+
 @media screen and (max-width:1024px) {
     .big-heading{
-        margin-right: 30px;
+        margin-left: 30px;
     }
 }
 @media screen and (max-width:912px) {
     .title-container{       
         flex-direction: column;
-        margin-right: 30px;
     }
     .big-heading{
         margin: 0;
+        margin-top: 30px;
         text-align: center;
-    }
-}
-@media screen and(max-width:500px){
-    .character-img{
-        width: 250;
-    }
-    .big-heading img{
-        width:200px;
     }
 
 }
-@media screen and (max-width:326px){
-    .navbar-list{
-        width: 250px;
-        
-    }
-    .logo a{
-        width: 10px;
-    }
+
+@media screen and (max-width:500px) {
     .character-img{
-        width: 150px;
-        
-    }
-    .big-heading img{
-        width:150px;
+        width: 250px;
     }
     
+
+}
+@media screen and (max-width:320px){
+    .character-img{
+        width: 200px;
+    }
+    .big-heading h1{
+        font-size:1.5em;
+        
+    }
 }
 /* COLLECTION */
 .collection{
@@ -304,6 +308,30 @@ aside{
 .sosial-media{
     padding: 0 10px ;
 }
+@media screen and (max-width:425){
+    .collection-card{
+        width: 90%;
+    }
+    .image-box{
+        width: 100%;
+    }
+    .card-button{
+        padding: 8 18px;
+    }
+    
+}
+@media screen and (max-width:320px) {
+    .collection-card{
+        width: 70.5%;
+    }
+    .image-box{
+        width: 100%;
+    }
+    .card-button{
+        padding: 4 9px;
+    }
+    
+}
 /* FOOTER */
 footer{
     background-color: rgb(4, 0, 0);
@@ -312,6 +340,7 @@ footer{
     margin-bottom:-18px ;
 }
 footer ,p{margin-top: 10px;}
+
 
 /* Profil-image */
 
