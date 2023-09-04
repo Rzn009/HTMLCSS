@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:rgb(222, 222, 222);
+
+}
+
+.blink{animation: blinker 1.5s linear infinite;}
+
+@keyframes blinker{50%{opacity: 0;}}    
+body{background-color: rgb(100, 40, 179);}
+
+    /* NAVBAR */
+.logo span{color: rgb(32, 28, 46);}
+
+.navbar-list{
+    background-color:rgb(110, 94, 201);
+    display: flex;  
+    justify-content: flex-end;
+    align-items: center;
+    padding: 17px 0;
+    
+}
+.navbar-item{
+    margin: 0 20px;
+    list-style-type:none ;
+}
+.navbar-link{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+}
+.navbar-link:hover{
+    color: black;
+}
+.logo{
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+    list-style-type:none ;
+    margin-left: 33px;
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}   
+.navbar-button{
+    text-decoration: none;
+    font-size: 1em;
+    background:rgb(21, 64, 158);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: aliceblue;
+    padding: 8px 16px;
+}
+.navbar-button:hover{background-color: rgb(82, 69, 95);}
+.logo a{
+    text-decoration: none  ;
+}
+.carhacter.jpg{
+    padding-left: 1em   ;
+}
+Explore-button{background-color: aqua;}
+p.outside{outline-style:outset ;}
+
+.toogle{
+    list-style-type: none;
+    display: none;
+    margin: 0 10px;
+}
+@media screen and (max-width:768px){
+    .navbar-list{
+        flex-wrap: wrap;
+    }
+
+    .toogle{display: block;}
+    .navbar-item{
+        display: none;
+        margin: 20px;
+        width: 100%;
+        margin-right: 50px;
+        text-align: right;
+    }
+    .navbar-button{
+        display: flex;
+        width: 40%; 
+        justify-content: center;
+        margin-left: auto;
+    }
+    .active{display: block;}
+    
+}
+
+/* TITLE */
+
+.title{
+    padding: 50px 50px;
+
+}
+.title-container{
+    display:flex ;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.character{
+    flex: 1;
+    text-align: center;
+    margin: auto;
+}
+.character-img{
+    width: 500px;
+    border-radius:3%;
+    margin-right: auto;
+}
+.big-heading{
+    flex: 1;
+    margin-left: 30px;
+    margin: auto;
+}
+.big-heading h1{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: black    ;
+}
+.big-heading p{
+    font-size: 1,5em;
+    margin-bottom: 50px;
+}
+
+.Explore-button{
+    background-color: blueviolet;
+    border:none;
+    border-radius: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-right:30px ;
+    padding: 23px 50px;
+
+
+}
+.Explore-button a{
+    text-decoration: none;
+    color: white;
+}
+.Explore-button:hover{
+    background-color: rgb(11, 21, 135);
+    color: black;
+}
+@media screen and (max-width:1024px) {
+    .big-heading{
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width:912px) {
+    .title-container{       
+        flex-direction: column;
+        margin-right: 30px;
+    }
+    .big-heading{
+        margin: 0;
+        text-align: center;
+    }
+}
+/* COLLECTION */
+.collection{
+    margin-top:25px ;
+    background-color: rgb(255, 255, 255);
+    text-align: center; 
+    padding:50px 0px ;
+}
+
+.collection h2{
+    color: black;
+    font-size: 3em;
+    margin-bottom: 42px;
+}
+
+.collection-container{
+    display: flex;
+    justify-content: center ;
+    flex-wrap:wrap ;
+}
+.collection-card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(244, 238, 244);
+
+}
+.collection-card:hover{
+    box-shadow: 0 0 5px;
+
+}
+.image-box{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.image-box img{
+    height: 100%;
+    width:100%; 
+    transition: 0.7s ease-in-out;
+}
+.image-box:hover img{
+    transform: scale(1.1);
+}
+
+.collection h3{
+    color: black;
+    font-weight: bold;
+    margin: 5px 0 10px 0 px;
+    text-align: center;
+
+}
+.species{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 10px 0;
+    text-align: center  ;
+}
+
+.type{
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    margin: 10px 10px 0 ;
+    text-align: center;
+
+
+}
+.card-button{
+    background-color: rgb(132, 19, 184);
+    padding: 15px 18px;
+    border-radius: 10px;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px 20px 10px;
+    border: 0;
+}
+.card-button:hover{
+    background-color: aqua;
+    box-shadow: blueviolet;
+}
+
+/*ASSIDE  */
+aside{
+    background-color:white;
+    justify-content: center;
+    display: flex;
+}
+
+.biography-card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px ;
+    border-radius: 10px;
+    background-color: rgb(253, 253, 253);
+    text-align: center;
+    box-shadow: 0 0 10px rgb(2, 7, 31);
+}
+.biography-card:hover{
+    box-shadow: 0 0 15px gray;
+}
+
+.contact{
+    margin: 10px 0 10px;
+}
+.sosial-media{
+    padding: 0 10px ;
+}
+/* FOOTER */
+footer{
+    background-color: rgb(4, 0, 0);
+    text-align: center;
+    padding: 100px 0;       
+    margin-bottom:-18px ;
+}
+footer ,p{margin-top: 10px;}
+
+/* Profil-image */
+
+.profil-image{
+    border-radius:10px 10px 0 0;
+}
+.biography-card h3{
+    color: black;
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
+
