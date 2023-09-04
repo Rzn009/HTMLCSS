@@ -89,6 +89,14 @@ p.outside{outline-style:outset ;}
     .active{display: block;}
     
 }
+@media screen and(max-wdith:400px) {
+    .navbar-list{
+        flex-wrap: wrap;
+        
+    }
+
+    
+}
 
 /* TITLE */
 
